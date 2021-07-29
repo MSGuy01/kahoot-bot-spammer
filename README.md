@@ -10,18 +10,13 @@
  ## 2. Install required packages
  ```
  npm install system-sleep
+ npm install prompt-sync
  ```
  ## 3. Rename "node_modules.a" to "node_modules"
  ```
  mv node_modules.a node_modules
  ```
  Reason: kahoot.js-updated has been removed, but I still have an archived version
- ## 4. Edit variables
- **ONLY EDIT VARIABLES BETWEEN THE `// main vars` AND `// end main vars` COMMENTS**  
- `const kahootCode = 1234567;` This is where your Kahoot game code goes. example: `const kahootCode = 9088726;`  
- `const kahootBotPrefix = 'kbot';` The Kahoot bot's name should go here. example: `const kahootBotPrefix = 'goodBot';`  
- `const kahootBotNumberSeperator = ' #';` The Seperator of the bot's name and number. exmaple: `const kahootBotNumberSeperator = '.';` will pop up as botName.1, botName.2, and so on  
- `const numberOfBots = 51; // usually 75 or under. 51 as default.` The actual amount of bots to add. example: `const numberOfBots = 10;`  
 ## 5. Execute script
  `node spamkahoot.js`  
 
