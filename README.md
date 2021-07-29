@@ -22,7 +22,6 @@
 
  ## NOTES:
  ### Each bot joins with a 250ms (.25s) delay to show up in numerical order AND to not get kicked for spam  
- ### On every question, each bot will automatically select the first answer. This makes for a hilarious wrong/right ratio
+ ### On every question, each bot will select a random answer
  ### Please use responsibly :)  
  ### Have fun and try not to annoy too many people  
- ###### Remember, emia means presence in blood
