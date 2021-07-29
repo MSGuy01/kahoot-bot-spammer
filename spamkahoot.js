@@ -3,12 +3,14 @@ const sleep = require("system-sleep");
 
 // main vars
 
-const kahootCode = 1234567;
-const kahootBotPrefix = 'kbot';
 const kahootBotNumberSeperator = ' #';
-const numberOfBots = 51; // usually 75 or under. 51 as default.
 
 // end main vars
+const prompt = require('prompt-sync')();
+ 
+const numberOfBots = prompt('Enter number of bots: ');
+const kahootCode = prompt('Enter game code: ');
+const kahootBotPrefix = prompt('Enter bot name: ');
 
 for (var i = 0; i < numberOfBots; i++) {
     console.log('joining bot ' + i + '/' + numberOfBots);
@@ -17,7 +19,7 @@ for (var i = 0; i < numberOfBots; i++) {
     client.join(kahootCode, kahootBotPrefix + kahootBotNumberSeperator + i);
     client.on("QuestionStart", question => {
         console.log('choosing the first answer..');
-        question.answer(0);
+        question.answer(Math.floor(Math.random() * 4));
         console.log('---------------------------');
     });
     console.log('joined bot ' + i + '/' + numberOfBots);
