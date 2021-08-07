@@ -6,7 +6,7 @@
 
 # How to use  
  ## 1. Clone this repo  
- `git clone https://github.com/aidanbxyz/kahoot-bot-spammer.git`  
+ `git clone https://github.com/MSGuy01/kahoot-bot-spammer.git`  
  ## 2. Install required packages
  ```
  npm install system-sleep
