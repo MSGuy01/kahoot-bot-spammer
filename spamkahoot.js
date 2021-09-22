@@ -8,9 +8,9 @@ const kahootBotNumberSeperator = ' #';
 // end main vars
 const prompt = require('prompt-sync')();
  
-const numberOfBots = prompt('Enter number of bots: ');
-const kahootCode = prompt('Enter game code: ');
-const kahootBotPrefix = prompt('Enter bot name: ');
+const numberOfBots = prompt('Enter number of bots: ');15
+const kahootCode = prompt('Enter game code: ');7437490
+const kahootBotPrefix = prompt('Enter bot name: ');Mikki
 
 for (var i = 0; i < numberOfBots; i++) {
     console.log('joining bot ' + i + '/' + numberOfBots);
